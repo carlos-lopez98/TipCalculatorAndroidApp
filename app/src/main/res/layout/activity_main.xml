@@ -16,5 +16,16 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:hint="Cost Of Service"/>
+    <!--Remember since this is a child of the constraintLayout
+        We must add our constraints, here we added the top to be the
+        Cost of the Service line-->
+    <TextView
+        android:id = "@+id/service_question"
+        app:layout_constraintTop_toBottomOf="@id/cost_of_service"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="How Was the Service">
+    </TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
